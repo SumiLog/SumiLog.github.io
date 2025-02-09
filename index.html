@@ -35,5 +35,20 @@
 <body>
   <script src="flutter_bootstrap.js" async></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa3HxqNL3gHl-igU8PzzfC7_or9n9Shvk"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyDes3uLpIK4JV_TxXJqeiXiPjj9wXAIytc",
+      authDomain: "sumilog-6025f.firebaseapp.com",
+      projectId: "sumilog-6025f",
+      storageBucket: "sumilog-6025f.firebasestorage.app",
+      messagingSenderId: "210131026822",
+      appId: "1:210131026822:web:cda3bfbf7b786481cb2207",
+      measurementId: "G-MLEL3DLKCC"
+    };
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+  </script>  
 </body>
 </html>
