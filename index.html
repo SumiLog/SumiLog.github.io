@@ -49,6 +49,11 @@
     };
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-  </script>  
+  </script>
+  <script>
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      registrations.forEach(reg => reg.unregister());
+    });
+  </script>
 </body>
 </html>
